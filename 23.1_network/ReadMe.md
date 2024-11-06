@@ -91,10 +91,98 @@ Resource Terraform:
 
 ![consol](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.5.jpg)
 
-6. Проверяем созданную облачную сеть VPC и подсети Public и Private
+6. Проверяем созданную облачную сеть **VPC** и подсети **Public** и **Private**
 
 ![vpc](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.6.jpg)
 
 7. Проверяем созданную таблицу маршрутизации
 
 ![router](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.7.jpg)
+
+8. Проверяем подключение по **ssh** и наличие выхода в интернет на ВМ `vm-01 (public)`
+
+```bash
+PS C:\Users\Администратор> ssh ubuntu@89.169.134.184
+The authenticity of host '89.169.134.184 (89.169.134.184)' can't be established.
+ED25519 key fingerprint is SHA256:tYL5J371R4hKndZ3r6z2x+2gAuh5dHWSg+tsuzIbxD4.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '89.169.134.184' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-124-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Nov  6 04:08:02 PM UTC 2024
+
+  System load:  0.08              Processes:             128
+  Usage of /:   52.1% of 7.79GB   Users logged in:       0
+  Memory usage: 10%               IPv4 address for eth0: 192.168.10.10
+  Swap usage:   0%
+
+ubuntu@vm-public:~$ ping yandex.ru
+PING yandex.ru (77.88.44.55) 56(84) bytes of data.
+64 bytes from yandex.ru (77.88.44.55): icmp_seq=1 ttl=56 time=7.45 ms
+64 bytes from yandex.ru (77.88.44.55): icmp_seq=2 ttl=56 time=7.17 ms
+64 bytes from yandex.ru (77.88.44.55): icmp_seq=3 ttl=56 time=7.17 ms
+64 bytes from yandex.ru (77.88.44.55): icmp_seq=4 ttl=56 time=7.18 ms
+^C
+--- yandex.ru ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 7.167/7.240/7.453/0.122 ms
+```
+
+9. Проверяем подключение по **ssh** и наличие выхода в интернет на ВМ `nat-vm-01`
+
+```bash
+PS C:\Users\Администратор> ssh ubuntu@89.169.154.70
+The authenticity of host '89.169.154.70 (89.169.154.70)' can't be established.
+ED25519 key fingerprint is SHA256:iGPyOa109ZDSjJLc+w+q1ZmlTH5ADW4vykWXp22WBAs.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '89.169.154.70' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-124-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Nov  6 04:09:45 PM UTC 2024
+
+  System load:  0.0               Processes:             128
+  Usage of /:   52.1% of 7.79GB   Users logged in:       0
+  Memory usage: 10%               IPv4 address for eth0: 192.168.10.254
+  Swap usage:   0%
+
+ubuntu@nat-instance-vm-01:~$ ping yandex.ru
+PING yandex.ru (5.255.255.77) 56(84) bytes of data.
+64 bytes from yandex.ru (5.255.255.77): icmp_seq=1 ttl=57 time=1.15 ms
+64 bytes from yandex.ru (5.255.255.77): icmp_seq=2 ttl=57 time=0.344 ms
+64 bytes from yandex.ru (5.255.255.77): icmp_seq=3 ttl=57 time=0.552 ms
+64 bytes from yandex.ru (5.255.255.77): icmp_seq=4 ttl=57 time=0.382 ms
+^C
+--- yandex.ru ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 0.344/0.607/1.151/0.323 ms
+```
+
+10. Делаем из ВМ `nat-vm-01` bridge для ВМ `vm-02 (private)`, добавив строки в конфигурацию ssh по пути: `/.ssh/config`
+
+```bash
+Host vm-nat-01
+  IdentityFile ~/.ssh/id_ed25519
+  HostName 89.169.154.70
+  User ubuntu
+Host 192.168.20.10
+  IdentityFile ~/.ssh/id_ed25519
+  HostName 192.168.20.10
+  User ubuntu
+  ProxyCommand ssh -W %h:%p ubuntu@vm-nat-01 -p 22
+```
+
+11. Теперь проверяем подключение по **ssh** и наличие выхода в интернет на ВМ `vm-02 (private)`
+
+```bash
+
+```
