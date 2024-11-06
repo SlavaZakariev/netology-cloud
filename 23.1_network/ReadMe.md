@@ -71,7 +71,7 @@ Resource Terraform:
 
 1. Устанавливаем стабильную версию **terraform**
 
-[ver](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.1.jpg)
+![ver](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.1.jpg)
 
 2. Создаём файлы проекта 
 
@@ -79,4 +79,4 @@ Resource Terraform:
 
 3. Инициализируем проект
 
-[init](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.2.jpg)
+![init](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.2.jpg)
