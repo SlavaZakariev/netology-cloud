@@ -83,7 +83,7 @@ Resource Terraform:
 
 ![apply](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.3.jpg)
 
-4. Проверяем рабобоспособность консольной утилиты **yandex**
+4. Проверяем работоспособность консольной утилиты **yandex**
 
 ![yc](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.4.jpg)
 
@@ -167,7 +167,8 @@ PING yandex.ru (5.255.255.77) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.344/0.607/1.151/0.323 ms
 ```
 
-10. Делаем из ВМ `nat-vm-01` bridge для ВМ `vm-02 (private)`, добавив строки в конфигурацию ssh по пути: `/.ssh/config`
+10. Делаем из ВМ `nat-vm-01` bridge для ВМ `vm-02 (private)`, добавив строки в конфигурацию ssh по пути: `/.ssh/config` \
+    **Примечание:** (путь актуален для ОС Windows 10/11)
 
 ```bash
 Host vm-nat-01
