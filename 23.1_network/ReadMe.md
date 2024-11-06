@@ -184,5 +184,26 @@ Host 192.168.20.10
 11. Теперь проверяем подключение по **ssh** и наличие выхода в интернет на ВМ `vm-02 (private)`
 
 ```bash
+PS C:\Users\Администратор> ssh ubuntu@192.168.20.10
+The authenticity of host '192.168.20.10 (<no hostip for proxy command>)' can't be established.
+ED25519 key fingerprint is SHA256:0IdhcdE2YKrFLy090rd/fYm931f/s+o6hD5Relce8Io.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.20.10' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-124-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Nov  6 04:32:06 PM UTC 2024
+
+  System load:  0.08              Processes:             128
+  Usage of /:   51.6% of 7.79GB   Users logged in:       0
+  Memory usage: 10%               IPv4 address for eth0: 192.168.20.10
+  Swap usage:   0%
+
+ubuntu@vm-private:~$ ping yandex.ru
+PING yandex.ru (77.88.44.55) 56(84) bytes of data.
 
 ```
