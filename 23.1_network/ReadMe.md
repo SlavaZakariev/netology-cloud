@@ -203,7 +203,14 @@ Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-124-generic x86_64)
   Memory usage: 10%               IPv4 address for eth0: 192.168.20.10
   Swap usage:   0%
 
-ubuntu@vm-private:~$ ping yandex.ru
-PING yandex.ru (77.88.44.55) 56(84) bytes of data.
-
+ubuntu@vm-private:~$ ping mail.ru
+PING mail.ru (94.100.180.200) 56(84) bytes of data.
+64 bytes from mail.ru (94.100.180.200): icmp_seq=1 ttl=57 time=52.2 ms
+64 bytes from mail.ru (94.100.180.200): icmp_seq=2 ttl=57 time=103 ms
+64 bytes from mail.ru (94.100.180.200): icmp_seq=3 ttl=57 time=51.4 ms
+64 bytes from mail.ru (94.100.180.200): icmp_seq=4 ttl=57 time=119 ms
+^C
+--- mail.ru ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 51.382/81.529/119.380/30.278 ms
 ```
