@@ -75,6 +75,15 @@ Resource Terraform:
 
 2. Создаём [файлы проекта](https://github.com/SlavaZakariev/netology-cloud/tree/main/23.1_network/git)
 
+- [provaider.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/provaider.tf) - файл описания провайдера облака (Яндекс Облака)
+- [vars.providr.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/vars.provider.tf) - файл с переменными для провайдера (чувствительные данные)
+- [network.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/network.tf) - файл описание сети и подсети
+- [vars.network.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/vars.network.tf) - файл с переменными для сети
+- [vm.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/vm.tf) - файл описания виртуальных машин
+- [vars.vm.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/vars.vm.tf) - файл с переменными виртуальных машин
+- [locals.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/locals.tf) - файл для добавления публичного ssh на ВМ
+- [output.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.1_network/git/output.tf) - файл с выходными данными ВМ в терминале после создания
+
 3. Инициализируем проект
 
 ![init](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.2.jpg)
