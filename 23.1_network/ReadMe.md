@@ -78,3 +78,23 @@ Resource Terraform:
 3. Инициализируем проект
 
 ![init](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.2.jpg)
+
+3. Запускаем проект **terraform apply**
+
+![apply](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.3.jpg)
+
+4. Проверяем рабобоспособность консольной утилиты **yandex**
+
+![yc](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.4.jpg)
+
+5. Проверяем созданные ВМ через веб-консоль в браузере
+
+![consol](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.5.jpg)
+
+6. Проверяем созданную облачную сеть VPC и подсети Public и Private
+
+![vpc](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.6.jpg)
+
+7. Проверяем созданную таблицу маршрутизации
+
+![router](https://github.com/SlavaZakariev/netology-cloud/blob/48735da52175d45e08b644de617bede50009a806/23.1_network/resources/yc_1_1.7.jpg)
