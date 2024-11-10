@@ -107,7 +107,10 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 ![buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.3.jpg)
 
-5. Проверяем созданный через терминал Яндекс
+Прямая ссылка для скачивания файла:
+[https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg](https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg)
+
+5. Проверяем созданный бакет через терминал Яндекс
 
 ![yc-buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.4.jpg)
 
@@ -131,15 +134,15 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 ![jpg1](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.9.jpg)
 
-11. Удаляем 2 ВМ для проверки работы отказоустойчивости
+11. Удаляем 2 ВМ для проверки работы отказоустойчивости LB
 
 ![del-vmjpg1](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.10.jpg)
 
 12. Проверяем статус через терминал Яндекс
 
-- 1 машина в статусе доступна
-- 2 машины удалются
-- 1 машина создаётся автоматически
+- 1 машина - Доступна
+- 2 машины - Удаляются
+- 1 машина - Создаётся автоматически
 
 ![yc-lb-status](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.11.jpg)
 
