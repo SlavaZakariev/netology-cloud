@@ -85,12 +85,36 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 1. Создаём файлы проекта:
 
-- [bucker.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/bucket.tf)
-- [instance-group.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/instance-group.tf)
-- [load-balancer.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/load-balancer.tf)
-- [network.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/network.tf)
-- [provider.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/provider.tf)
-- [vars.instance-group.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.instance-group.tf)
-- [vars.network.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.network.tf)
-- [vars.provider.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.provider.tf)
+- [bucker.tf - файл с описание бакета](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/bucket.tf)
+- [instance-group.tf - файл с описанием инстанса ВМ](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/instance-group.tf)
+- [vars.instance-group.tf - файл с переменными для инстанса](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.instance-group.tf)
+- [load-balancer.tf - файл с описание балансировщика](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/load-balancer.tf)
+- [network.tf - файл с описанием сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/network.tf)
+- [vars.network.tf - файл с переменными для сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.network.tf)
+- [provider.tf - файл с описанием провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/provider.tf)
+- [vars.provider.tf файл с переменными для провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.provider.tf)
+- [files/Picture-01.jpg - Графический файл](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/files/Picture-01.jpg)
 
+2. Инициализируем проект
+
+![init](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.1.jpg)
+
+3. Запускаем выполненеие проекта
+
+![apply](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.2.jpg)
+
+4. Проверяем созданный бакет
+
+![buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.3.jpg)
+
+5. Проверяем созданный через терминал Yandex
+
+![yc-buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.4.jpg)
+
+6. Проверяем созданные ВМ (LAMP) через веб-консоль
+
+![console](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.5.jpg)
+
+7. Проверяем ВМ через терминал Yandex
+
+![yc-console](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.6.jpg)
