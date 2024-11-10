@@ -85,10 +85,10 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 1. Создаём файлы проекта:
 
-- [bucker.tf - файл с описание бакета](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/bucket.tf)
+- [bucker.tf - файл с описанием бакета](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/bucket.tf)
 - [instance-group.tf - файл с описанием инстанса ВМ](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/instance-group.tf)
 - [vars.instance-group.tf - файл с переменными для инстанса](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.instance-group.tf)
-- [load-balancer.tf - файл с описание балансировщика](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/load-balancer.tf)
+- [load-balancer.tf - файл с описанием балансировщика](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/load-balancer.tf)
 - [network.tf - файл с описанием сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/network.tf)
 - [vars.network.tf - файл с переменными для сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.network.tf)
 - [provider.tf - файл с описанием провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/provider.tf)
