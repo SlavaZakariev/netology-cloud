@@ -78,3 +78,19 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 Домашняя работа оформляется в своём Git репозитории в файле README.md. Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
 Файл README.md должен содержать скриншоты вывода необходимых команд, а также скриншоты результатов.
 Репозиторий должен содержать тексты манифестов или ссылки на них в файле README.md.
+
+---
+
+### Решение 1
+
+1. Создаём файлы проекта:
+
+- [bucker.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/bucket.tf)
+- [instance-group.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/instance-group.tf)
+- [load-balancer.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/load-balancer.tf)
+- [network.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/network.tf)
+- [provider.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/provider.tf)
+- [vars.instance-group.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.instance-group.tf)
+- [vars.network.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.network.tf)
+- [vars.provider.tf](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/git/vars.provider.tf)
+
