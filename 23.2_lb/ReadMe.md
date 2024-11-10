@@ -107,7 +107,7 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 ![buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.3.jpg)
 
-5. Проверяем созданный через терминал Yandex
+5. Проверяем созданный через терминал Яндекс
 
 ![yc-buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.4.jpg)
 
@@ -115,6 +115,34 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 ![console](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.5.jpg)
 
-7. Проверяем ВМ через терминал Yandex
+7. Проверяем ВМ через терминал Яндекс
 
 ![yc-console](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.6.jpg)
+
+8. Проверяем балансировщик и привязанные ВМ
+
+![lb](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.7.jpg)
+
+9. Проверяем балансировщик и статус ВМ через терминал Яндекс
+
+![yc-lb](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.8.jpg)
+
+10. Проверяем по IP-адресу LB доступность графического файла
+
+![jpg1](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.9.jpg)
+
+11. Удаляем 2 ВМ для проверки работы отказоустойчивости
+
+![del-vmjpg1](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.10.jpg)
+
+12. Проверяем статус через терминал Яндекс
+
+- 1 машина в статусе доступна
+- 2 машины удалются
+- 1 машина создаётся автоматически
+
+![yc-lb-status](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.11.jpg)
+
+13. Повторно проверяем по IP-адресу LB доступность графического файла
+
+![jpg2](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.12.jpg)
