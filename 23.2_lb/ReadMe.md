@@ -99,7 +99,7 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 ![init](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.1.jpg)
 
-3. Запускаем выполненеие проекта
+3. Запускаем выполнение проекта
 
 ![apply](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.2_lb/resources/yc_2_1.2.jpg)
 
