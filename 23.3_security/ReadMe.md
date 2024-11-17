@@ -71,3 +71,33 @@ aws s3 cp index.html s3://mysuperbacketname2021
 Домашняя работа оформляется в своём Git репозитории в файле README.md. Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
 Файл README.md должен содержать скриншоты вывода необходимых команд, а также скриншоты результатов.
 Репозиторий должен содержать тексты манифестов или ссылки на них в файле README.md.
+
+---
+
+### Решение 1
+
+### Решение 1
+
+1. Создаём файлы проекта:
+
+- [bucker.tf - файл с описанием бакета](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/bucker.tf)
+- [network.tf - файл с описанием сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/network.tf)
+- [vars.network.tf - файл с переменными для сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/vars.network.tf)
+- [provider.tf - файл с описанием провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/provider.tf)
+- [vars.provider.tf файл с переменными для провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/vars.provider.tf)
+- [files/Picture-01.jpg - Графический файл](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/files/Picture-01.jpg)
+
+2. Инициализируем проект
+
+![init]()
+
+3. Запускаем выполнение проекта
+
+![apply]()
+
+4. Проверяем созданный бакет
+
+![buck]()
+
+Прямая ссылка для скачивания файла:
+[https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg](https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg)
