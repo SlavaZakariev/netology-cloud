@@ -76,8 +76,6 @@ aws s3 cp index.html s3://mysuperbacketname2021
 
 ### Решение 1
 
-### Решение 1
-
 1. Создаём файлы проекта:
 
 - [bucker.tf - файл с описанием бакета](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/bucker.tf)
