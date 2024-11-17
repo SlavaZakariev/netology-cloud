@@ -89,15 +89,23 @@ aws s3 cp index.html s3://mysuperbacketname2021
 
 2. Инициализируем проект
 
-![init]()
+![init](https://github.com/SlavaZakariev/netology-cloud/blob/b5a5eba99bec53d9a70f88c6ec8ea04fd7b6c406/23.3_security/resources/yc_3_1.1.jpg)
 
 3. Запускаем выполнение проекта
 
-![apply]()
+![apply](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.2.jpg)
 
-4. Проверяем созданный бакет
+4. Проверяем созданный ключ
 
-![buck]()
+![key](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.3.jpg)
 
-Прямая ссылка для скачивания файла:
+5. Проверяем созданный бакет
+
+![buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.4.jpg)
+
+6. Проверяем доступность нашего объекта по прямой ссылке:
 [https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg](https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg)
+
+Объект недоступен, так как зашифрован
+
+![buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.5.jpg)
