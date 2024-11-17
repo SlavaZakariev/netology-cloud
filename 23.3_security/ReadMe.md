@@ -99,11 +99,15 @@ aws s3 cp index.html s3://mysuperbacketname2021
 
 ![key](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.3.jpg)
 
-5. Проверяем созданный бакет
+5. Проверяем созданный ключ через терминал Яндекс
+
+![yc-key](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.3.1.jpg)
+
+6. Проверяем созданный бакет
 
 ![buck](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.4.jpg)
 
-6. Проверяем доступность нашего объекта по прямой ссылке:
+7. Проверяем доступность нашего объекта по прямой ссылке:
 [https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg](https://storage.yandexcloud.net/zakariev-netology-bucket/Picture-01.jpg)
 
 Объект недоступен, так как зашифрован
