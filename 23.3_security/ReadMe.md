@@ -99,7 +99,7 @@ aws s3 cp index.html s3://mysuperbacketname2021
 
 5. Проверяем созданный ключ через терминал Яндекс
 
-![yc-key](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/resources/yc_3_1.3.1.jpg)
+![yc-key](https://github.com/SlavaZakariev/netology-cloud/blob/50160e319d97f06382ffd21fdb22a642ef6fbce9/23.3_security/resources/yc_3_1.3.1.jpg)
 
 6. Проверяем созданный бакет
 
