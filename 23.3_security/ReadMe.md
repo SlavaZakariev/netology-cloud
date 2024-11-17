@@ -81,11 +81,11 @@ aws s3 cp index.html s3://mysuperbacketname2021
 1. Создаём файлы проекта:
 
 - [bucker.tf - файл с описанием бакета](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/bucker.tf)
-- [network.tf - файл с описанием сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/network.tf)
-- [vars.network.tf - файл с переменными для сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/vars.network.tf)
-- [provider.tf - файл с описанием провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/provider.tf)
-- [vars.provider.tf файл с переменными для провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/vars.provider.tf)
-- [files/Picture-01.jpg - Графический файл](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_lb/git/files/Picture-01.jpg)
+- [network.tf - файл с описанием сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/network.tf)
+- [vars.network.tf - файл с переменными для сети](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/vars.network.tf)
+- [provider.tf - файл с описанием провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/provider.tf)
+- [vars.provider.tf файл с переменными для провайдера](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/vars.provider.tf)
+- [files/Picture-01.jpg - Графический файл](https://github.com/SlavaZakariev/netology-cloud/blob/main/23.3_security/git/files/Picture-01.jpg)
 
 2. Инициализируем проект
 
